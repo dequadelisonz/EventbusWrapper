@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/EventbusWrapper.iml" filepath="$PROJECT_DIR$/EventbusWrapper.iml" />
-      <module fileurl="file://$PROJECT_DIR$/eventbuswrapper2/eventbuswrapper2.iml" filepath="$PROJECT_DIR$/eventbuswrapper2/eventbuswrapper2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eventbuswrapper/eventbuswrapper.iml" filepath="$PROJECT_DIR$/eventbuswrapper/eventbuswrapper.iml" />
     </modules>
   </component>
 </project>
