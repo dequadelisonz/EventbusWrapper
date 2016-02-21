@@ -17,7 +17,7 @@ package code.martin.it.eventbuswrapper;
 
 import de.greenrobot.event.EventBus;
 
-public class EventbusObject  extends Object{
+public class EventbusObject {
 
     protected final String TAG=this.getClass().getSimpleName();
     protected final EventBus eBus=EventBus.getDefault();
@@ -27,12 +27,10 @@ public class EventbusObject  extends Object{
         eBus.register(this);
     }
 
-
-    @Override
-    protected void finalize() throws Throwable {
-        eBus.unregister(this);
-        super.finalize();
+    protected void unregister() {
+        if (eBus.isRegistered(this)) eBus.unregister(this);
     }
+
 
     public void onEventMainThread(IBaseEventbusEvent event){
 
