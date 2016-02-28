@@ -15,7 +15,10 @@
  *******************************************************************/
 package code.martin.it.eventbuswrapper;
 
+import android.util.Log;
+
 import de.greenrobot.event.EventBus;
+import de.greenrobot.event.SubscriberExceptionEvent;
 
 public class EventbusObject {
 
@@ -34,6 +37,12 @@ public class EventbusObject {
 
     public void onEventMainThread(IBaseEventbusEvent event){
 
+    }
+
+    public void onEventMainThread(SubscriberExceptionEvent see) {
+        Log.e(TAG, see.toString());
+        Log.e(TAG, see.causingEvent.toString());
+        Log.e(TAG, see.causingSubscriber.toString());
     }
 
 }
