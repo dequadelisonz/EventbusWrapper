@@ -10,6 +10,6 @@ It also includes the public ```interface IBaseEventbusEvent``` to be used to cre
 
 You can include this library in your project by adding to your gradle-build file this row:
 
-```compile(group: 'it.code.martin', name: 'eventbuswrapper', version: '1.0.1', ext: 'aar')```
+```compile(group: 'it.code.martin', name: 'eventbuswrapper', version: '1.0.2', ext: 'aar')```
 
 Further features will be added in the future.
